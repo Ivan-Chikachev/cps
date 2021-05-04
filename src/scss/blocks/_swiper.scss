@@ -1,0 +1,43 @@
+.swiper-slide {
+  width: 260px;
+  @media ($screen-tablet) {
+    width: 100%;
+  }
+
+  &--box-block {
+    width: 240px;
+    @media ($screen-tablet) {
+      width: 224px;
+    }
+    &:nth-child(3), &:nth-child(6), &:nth-child(9) {
+      @media ($screen-tablet) {
+        margin: 0 0 16px;
+      }
+      @media ($screen-desktop) {
+        margin: 0 32px 16px 0;
+      }
+    }
+
+    &:nth-child(4), &:nth-child(8) {
+      @media ($screen-desktop) {
+        margin: 0 0 16px;
+      }
+    }
+    @media ($screen-tablet) {
+      margin: 0 32px 16px 0;
+    }
+  }
+
+
+
+
+}
+
+.swiper-wrapper {
+  margin: 0 0 32px;
+  flex-wrap: nowrap;
+  @media ($screen-tablet) {
+    margin: 0;
+    flex-wrap: wrap;
+  }
+}

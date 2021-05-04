@@ -1,0 +1,29 @@
+.btn{
+  width: 120px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 40px 4px 12px;
+  background: #FF3E79;
+  border-radius: 16px;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 700;
+
+  &:hover{
+    &:after{
+      right: 15px;
+
+    }
+  }
+  &:after{
+    content: '';
+    background: url("../img/svg/dropdown.svg") no-repeat;
+    margin: 0 0 0 15px;
+    padding: 5px;
+    display: inline-block;
+  }
+}

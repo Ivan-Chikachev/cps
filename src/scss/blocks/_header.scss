@@ -1,0 +1,124 @@
+.icon-header {
+  width: 40px;
+  height: 40px;
+}
+
+.logo {
+  width: 97px;
+  height: 51px;
+}
+
+.header {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  @media ($screen-desktop) {
+    padding: 0;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__column {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__account {
+    display: none;
+    @media ($screen-tablet) {
+      display: flex;
+      align-items: center;
+    }
+    @media ($screen-desktop) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    @media ($screen-desktop) {
+      display: none;
+    }
+  }
+
+  &__burger {
+    cursor: pointer;
+    margin: 0 16px 0 0;
+    @media ($screen-tablet) {
+      margin: 0 20px 0 0;
+      border-right: 2px solid #EAEAEA;
+      padding: 0 20px 0 0;
+    }
+    @media ($screen-desktop) {
+      display: none;
+    }
+  }
+
+  &.blur {
+    filter: blur(15px);
+  }
+}
+
+.help {
+  padding: 0 0 0 4px;
+  border-left: 2px solid #EAEAEA;
+  display: flex;
+  align-items: center;
+
+  &__item {
+    margin: 0 0 0 16px;
+  }
+
+  &__repair {
+    @media ($screen-desktop) {
+
+      position: absolute;
+      top: 20px;
+      right: 230px;
+      display: flex;
+      align-items: center;
+      z-index: 2;
+    }
+  }
+
+  &__repair-name {
+    margin: 0 8px 0 0;
+    display: none;
+    @media ($screen-desktop) {
+      display: inline;
+    }
+
+  }
+
+  &__checkstatus {
+    @media ($screen-desktop) {
+
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      display: flex;
+      align-items: center;
+      z-index: 2;
+    }
+  }
+
+  &__checkstatus-name {
+    margin: 0 8px 0 0;
+    display: none;
+    @media ($screen-desktop) {
+      display: inline;
+    }
+  }
+}
+
+.account {
+  padding: 0 4px 0 0;
+
+  &__item {
+    margin: 0 16px 0 0;
+  }
+}

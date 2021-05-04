@@ -1,0 +1,39 @@
+.repairs {
+
+  &__read-more {
+    display: none;
+    margin: 0 0 32px;
+    @media ($screen-tablet) {
+      display: block;
+    }
+  }
+
+  &__items {
+    margin: 0 0 8px;
+    overflow: hidden;
+
+    &.open {
+      height: auto;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 240px;
+    height: 160px;
+    padding: 16px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    @media ($screen-tablet) {
+      width: 224px;
+    }
+  }
+  &__item-name{
+   margin: 0 0 105px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,43 @@
+.brands {
+
+  &__read-more {
+    display: none;
+    margin: 0 0 32px;
+    @media ($screen-tablet) {
+      display: block;
+    }
+  }
+
+  &__items {
+    margin: 0 0 8px;
+    overflow: hidden;
+    @media ($screen-tablet) {
+      height: 170px;
+    }
+
+    &.open {
+      height: auto;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+    height: 72px;
+    padding: 16px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    @media ($screen-tablet) {
+      width: 224px;
+    }
+  }
+}
+
+.icon-go {
+  width: 40px;
+  height: 40px;
+}
+

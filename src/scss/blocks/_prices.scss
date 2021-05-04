@@ -1,0 +1,101 @@
+.prices {
+  &__description {
+    margin: 0 0 40px;
+  }
+
+  &__text {
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin: 0 0 16px;
+  }
+
+  &__go {
+    font-size: 16px;
+    line-height: 24px;
+    word-spacing: 5px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    font-weight: 500;
+    @media ($screen-tablet) {
+    word-spacing: 0;
+    }
+  }
+
+  &__items {
+    margin: 0 0 24px 0;
+    border-radius: 6px;
+    @media ($screen-tablet) {
+      background-color: white;
+    }
+  }
+}
+
+.work-type {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  width: 260px;
+  height: 200px;
+  position: relative;
+  background-color: white;
+  border-radius: 6px;
+  &--no-border{
+    border: none !important;
+  }
+
+  @media ($screen-tablet) {
+    border-radius: 0;
+    background: inherit;
+    width: 100%;
+    flex-direction: row;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #EAEAEA;
+  }
+
+  &__name {
+    color: #7E7E82;
+    font-size: 14px;
+    line-height: 16px;
+    opacity: 0.72;
+    margin: 0 0 4px;
+    @media ($screen-tablet) {
+      display: none;
+    }
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+    margin: 0 10px 16px 0;
+
+
+    @media ($screen-tablet) {
+      margin: 0 10px 0 0;
+      width: 100px;
+    }
+
+    &--wide {
+      @media ($screen-tablet) {
+        width: 350px;
+      }
+    }
+
+    &:last-of-type {
+      margin: 0;
+    }
+
+  }
+
+  &__btn {
+    position: absolute;
+    left: 125px;
+    bottom: 16px;
+    @media ($screen-tablet) {
+      position: static;
+    }
+  }
+}

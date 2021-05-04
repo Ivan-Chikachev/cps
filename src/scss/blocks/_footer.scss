@@ -1,0 +1,50 @@
+.footer {
+  flex: 0 0 auto;
+  border-top: 1px solid #D9FFF5;
+  padding: 16px 0 19px;
+  @media ($screen-tablet) {
+    padding: 32px 0 21px;
+  }
+
+  &__items {
+
+    @media ($screen-tablet) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+  }
+
+  &__item {
+    line-height: 16px;
+    text-align: center;
+    color: #7E7E82;
+    mix-blend-mode: normal;
+    opacity: 0.72;
+    margin: 0 0 16px;
+    @media ($screen-tablet) {
+      margin: 0;
+      width: 330px;
+      text-align: right;
+    }
+
+    &:first-child {
+      @media ($screen-tablet) {
+        text-align: left;
+      }
+    }
+
+    &:nth-child(2) {
+      @media ($screen-tablet) {
+        text-align: center;
+      }
+    }
+
+    &:last-child {
+      margin: 0;
+      @media ($screen-tablet) {
+        text-align: right;
+      }
+    }
+  }
+}
