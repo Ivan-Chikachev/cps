@@ -1,0 +1,82 @@
+//.call-modal {
+//  height: 100%;
+//  z-index: 10;
+//  position: absolute;
+//  right: 0;
+//  top: 0;
+//  padding: 16px 24px;
+//  background: #FFFFFF;
+//  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+//  width: 320px;
+//  display: none;
+//  @media ($screen-tablet) {
+//    width: 440px;
+//    padding: 16px 32px;
+//  }
+//
+//  &.open {
+//    display: block;
+//  }
+//
+//  & input, textarea {
+//    border: 1px solid #EAEAEA;
+//    border-radius: 8px;
+//    width: 100%;
+//    padding: 12px 16px;
+//  }
+//
+//  &__title {
+//    font-size: 24px;
+//    line-height: 32px;
+//    letter-spacing: -0.6px;
+//    color: #1B1C21;
+//    font-weight: 700;
+//    position: relative;
+//    margin: 104px 0 24px 0;
+//    @media ($screen-tablet) {
+//      margin: 40px 0 24px 0;
+//    }
+//
+//    &:before {
+//      content: '';
+//      position: absolute;
+//      left: -24px;
+//      height: 35px;
+//      width: 4px;
+//      background-color: #41F6D7;
+//      display: inline-block;
+//      @media ($screen-tablet) {
+//        left: -32px;
+//      }
+//    }
+//  }
+//
+//  &__close {
+//    position: absolute;
+//  }
+//
+//  &__tel {
+//    margin: 0 0 16px;
+//  }
+//
+//  &__mail-input {
+//    height: 120px;
+//    resize: none;
+//  }
+//
+//  &__text {
+//    font-weight: 500;
+//    color: #7E7E82;
+//    margin: 0 0 23px;
+//  }
+//
+//  &__btn-block {
+//    margin: auto 0 75px;
+//    display: flex;
+//    justify-content: flex-end;
+//  }
+//
+//  &__link {
+//    color: #FF3E79;
+//  }
+//}

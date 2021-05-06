@@ -15,6 +15,7 @@
       width: 4px;
       background-color: #41F6D7;
       display: inline-block;
+      border-radius: 20px;
     }
   }
 
@@ -100,6 +101,7 @@
   }
 
   &__read-more {
+    display: inline-block;
     margin: 16px 0 16px 10px;
   }
 }

@@ -244,7 +244,8 @@ h6 {
     height: 40px;
     width: 4px;
     background-color: #41F6D7;
-    display: inline-block; }
+    display: inline-block;
+    border-radius: 20px; }
 .service__menu {
   margin: 0 0 24px; }
 
@@ -305,9 +306,27 @@ h6 {
         width: 531px;
         margin: 0 0 40px; } }
   .service-content__read-more {
+    display: inline-block;
     margin: 16px 0 16px 10px; }
 
+.sidebar.open ~ .content {
+  height: 100vh;
+  overflow: hidden; }
+
+@keyframes open {
+  0% {
+    display: none;
+    opacity: 0;
+    transform: translate(-100%, 0); }
+  50% {
+    opacity: 0.3;
+    display: block;
+    transform: translate(-50%, 0); }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0); } }
 .sidebar {
+  animation: open forwards .3s linear;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
@@ -316,7 +335,8 @@ h6 {
   display: none;
   flex-direction: column;
   background: #FFFFFF;
-  z-index: 10; }
+  z-index: 10;
+  transition: all .3s ease; }
   .sidebar.open {
     display: flex;
     position: absolute;
@@ -374,6 +394,8 @@ h6 {
 
 .sidebar-footer__account {
   margin: 0 0 16px; }
+.sidebar-footer__list {
+  display: flex; }
 .sidebar-footer__link {
   margin: 0 16px 0 0; }
   .sidebar-footer__link:last-child {
@@ -646,7 +668,8 @@ h6 {
   letter-spacing: -0.15px;
   text-transform: uppercase;
   color: #FFFFFF;
-  font-weight: 700; }
+  font-weight: 700;
+  cursor: pointer; }
   .btn:hover:after {
     right: 15px; }
   .btn:after {
@@ -655,3 +678,102 @@ h6 {
     margin: 0 0 0 15px;
     padding: 5px;
     display: inline-block; }
+
+.feedback-modal.open ~ .content, .call-modal.open ~ .content {
+  height: 80vh;
+  overflow: hidden; }
+
+.feedback-modal.open ~ .sidebar, .call-modal.open ~ .sidebar {
+  height: auto;
+  overflow: hidden; }
+
+.feedback-modal, .call-modal {
+  min-height: 100vh;
+  z-index: 10;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 16px 24px;
+  background: #FFFFFF;
+  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+  width: 320px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease; }
+  @media (min-width: 768px) {
+    .feedback-modal, .call-modal {
+      width: 440px;
+      padding: 16px 32px; } }
+  .feedback-modal.open, .call-modal.open {
+    opacity: 1;
+    visibility: visible; }
+  .feedback-modal input, .feedback-modal textarea, .call-modal input, .call-modal textarea {
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    width: 100%;
+    padding: 12px 16px; }
+  .feedback-modal__title, .call-modal__title {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    color: #1B1C21;
+    font-weight: 700;
+    position: relative;
+    margin: 104px 0 24px 0; }
+    @media (min-width: 1280px) {
+      .feedback-modal__title, .call-modal__title {
+        margin: 40px 0 24px 0; } }
+    .feedback-modal__title:before, .call-modal__title:before {
+      content: '';
+      position: absolute;
+      left: -24px;
+      height: 35px;
+      width: 4px;
+      background-color: #41F6D7;
+      display: inline-block;
+      border-radius: 20px; }
+      @media (min-width: 768px) {
+        .feedback-modal__title:before, .call-modal__title:before {
+          left: -32px; } }
+  .feedback-modal__close, .call-modal__close {
+    cursor: pointer;
+    position: absolute;
+    top: 24px; }
+    @media (min-width: 1280px) {
+      .feedback-modal__close, .call-modal__close {
+        right: 473px;
+        top: 32px; } }
+  .feedback-modal__name, .call-modal__name {
+    margin: 0 0 16px; }
+  .feedback-modal__tel, .call-modal__tel {
+    margin: 0 0 16px; }
+  .feedback-modal__email, .call-modal__email {
+    margin: 0 0 16px; }
+  .feedback-modal__mail, .call-modal__mail {
+    margin: 0 0 16px; }
+  .feedback-modal__mail-input, .call-modal__mail-input {
+    height: 120px;
+    resize: none; }
+  .feedback-modal__text, .call-modal__text {
+    font-weight: 500;
+    color: #7E7E82;
+    margin: 0 0 23px; }
+  .feedback-modal__btn-block, .call-modal__btn-block {
+    margin: auto 0 75px;
+    display: flex;
+    justify-content: flex-end; }
+  .feedback-modal__link, .call-modal__link {
+    color: #FF3E79; }
+
+.area {
+  display: none;
+  background: #FFF;
+  opacity: 0.9;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 5; }
+  .area.open {
+    display: block; }
