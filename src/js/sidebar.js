@@ -9,24 +9,14 @@ console.log(close.attributes)
 
 burger.addEventListener('click', ()=>{
 
-  header.classList.add('blur')
-  content.classList.add('blur')
   sidebar.classList.add('open')
 
 
 })
 close.addEventListener('click', ()=>{
 
-  header.classList.remove('blur')
-  content.classList.remove('blur')
   sidebar.classList.remove('open')
 })
 
-content.addEventListener('click', ()=>{
 
-  header.classList.remove('blur')
-  content.classList.remove('blur')
-  sidebar.classList.remove('open')
-
-})
 
