@@ -1,0 +1,20 @@
+.input {
+  border: 1px solid #EAEAEA;
+  border-radius: 8px;
+  width: 100%;
+  padding: 12px 16px;
+
+  &:focus {
+    box-shadow: 0 0 3px 1px #41F6D7;
+  }
+  &:focus:valid{
+    box-shadow: 0 0 3px 1px #2ff323;
+  }
+  &:not(:focus):invalid{
+    box-shadow: none;
+  }
+  &:invalid{
+    box-shadow: 0 0 3px 1px #ff3240;
+  }
+
+}

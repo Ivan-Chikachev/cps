@@ -11,6 +11,7 @@ const burger = document.querySelectorAll('.header__burger')
 const sidebar = document.querySelector('.sidebar')
 
 const area = document.querySelector('.area');
+const main = document.querySelector('.main');
 
 const modalWindow = (btn, modal, close) =>{
 
@@ -19,6 +20,7 @@ const modalWindow = (btn, modal, close) =>{
       item.addEventListener('click', (e)=>{
         modal.classList.add('open')
         area.classList.add('open')
+        main.classList.add('open')
 
         if(modal !== sidebar){
           sidebar.classList.remove('open')
@@ -38,6 +40,7 @@ const modalWindow = (btn, modal, close) =>{
 
     modal.classList.remove('open')
     area.classList.remove('open')
+    main.classList.remove('open')
 
   })
 }
@@ -52,8 +55,8 @@ const isCloseModal = (close) =>{
       !callModal.classList.contains('open') &&
       !feedbackModal.classList.contains('open')){
       area.classList.remove('open')
+      main.classList.remove('open')
     }
-
   })
 }
 isCloseModal(feedbackClose)

@@ -1,14 +1,6 @@
-.feedback-modal.open ~ .content, .call-modal.open ~ .content {
-  height: 80vh;
-  overflow: hidden;
-}
-.feedback-modal.open ~ .sidebar, .call-modal.open ~ .sidebar {
-  height: auto;
-  overflow: hidden;
-}
-
 .feedback-modal, .call-modal {
-  min-height: 100vh;
+  height: 100%;
+  min-height: 1100px;
   z-index: 10;
   position: absolute;
   right: 0;
@@ -29,13 +21,6 @@
   &.open {
     opacity: 1;
     visibility: visible;
-  }
-
-  & input, textarea {
-    border: 1px solid #EAEAEA;
-    border-radius: 8px;
-    width: 100%;
-    padding: 12px 16px;
   }
 
   &__title {
@@ -76,24 +61,11 @@
 
   }
 
-  &__name {
+  &__input {
     margin: 0 0 16px;
   }
 
-  &__tel {
-    margin: 0 0 16px;
-  }
-
-  &__email {
-
-    margin: 0 0 16px;
-  }
-
-  &__mail {
-    margin: 0 0 16px;
-  }
-
-  &__mail-input {
+  &__mail-form {
     height: 120px;
     resize: none;
   }
@@ -112,5 +84,8 @@
 
   &__link {
     color: #FF3E79;
+    &:hover{
+      color: #c32b5c;
+    }
   }
 }

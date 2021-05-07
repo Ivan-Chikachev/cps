@@ -3,3 +3,4 @@ import './script';
 import './scriptMenu';
 import './slider';
 import './modal';
+import './phoneMask';

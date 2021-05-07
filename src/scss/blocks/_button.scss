@@ -1,9 +1,8 @@
 .btn{
-  width: 120px;
   height: 32px;
   display: inline-flex;
   align-items: center;
-  padding: 4px 40px 4px 12px;
+  padding: 4px 20px 4px 12px;
   background: #FF3E79;
   border-radius: 16px;
   font-size: 12px;
@@ -15,10 +14,7 @@
   cursor: pointer;
 
   &:hover{
-    &:after{
-      right: 15px;
-
-    }
+    background: #c32b5c;
   }
   &:after{
     content: '';

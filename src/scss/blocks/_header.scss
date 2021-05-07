@@ -1,6 +1,11 @@
 .icon-header {
+  fill: #FF3E79;
   width: 40px;
   height: 40px;
+
+  &:hover {
+    fill: #c32b5c;
+  }
 }
 
 .logo {
@@ -85,7 +90,8 @@
     }
   }
 
-  &__repair-name {
+  &__name {
+    color: #1B1C21;
     margin: 0 8px 0 0;
     display: none;
     @media ($screen-desktop) {
@@ -106,13 +112,6 @@
     }
   }
 
-  &__checkstatus-name {
-    margin: 0 8px 0 0;
-    display: none;
-    @media ($screen-desktop) {
-      display: inline;
-    }
-  }
 }
 
 .account {
